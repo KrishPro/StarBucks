@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    
+    <style>
+      .grid > .row > .col > .card > img {
+        height: 200px;
+      }
+
+        #scrollToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+    </style>
+    <title>Starbucks</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/static/favicon.png" class="me-3">
+            Starbucks</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+            </ul>
+              <button class="btn btn-primary">Find a store</button>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/carousel/img1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/carousel/img2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/carousel/img3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="grid container mt-5">
+          <div class="row mb-5">
+              <div class="col"><img src="/static/home/img1.png" alt="" srcset=""></div>
+              <div class="col text-left" style="padding-top: 135px;">
+                  <div>
+                      <h1 class="text-uppercase fw-bolder">LET US DELIGHT YOU.</h1>
+                      <p class="fw-bold fst-italic">Delicious, handcrafted beverages and great-tasting food. The <br> secret to making life better.</p>
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col text-left" style="padding-top: 135px;">
+              <div>
+                <h1 class="text-uppercase fw-bolder">OPPORTUNITY</h1>
+                <p class="fw-bold fst-italic">To be more than an employee, to be a partner.</p>
+              </div>
+            </div>
+            <div class="col"><img src="/static/home/img2.png" alt="" srcset=""></div>
+          </div>
+      </div>
+    <hr class="mx-5">
+
+
+    <div class="container" style="padding-top: 100px;" id="menu">
+    <h1 class="mb-5">Menu</h1>
+    <div class="grid">
+      <div class="row">
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/tandoori_paneer_sandwich.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tandoori Paneer Sandwich</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/cocoa_cappuccino.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cocoa Cappuccino</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/flat_white.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flat White</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/iced_wcm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Iced White Chocolate Mocha</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/velvet-vanilla-latte.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Velvet Vanilla Latte</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/Citrus_Cold_Brew.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Citrus Cold Brew</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/sign_hot_choc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Signature Hot Chocolate</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/Vanilla_Chocolate_Scoop.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vanilla with Chocolate Sauce</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/menu_items/hawaiian_club_sand.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hawaiian Veg Club Sandwich</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, iusto quod.</p>
+              <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+    <button onclick="topFunction()" id="scrollToTop" class="btn btn-primary" style="display: none;">Scroll to Top</button>
+
+
+    <script src="static/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("scrollToTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+  </script>
+  </body>
+</html>
